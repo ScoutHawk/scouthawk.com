@@ -1,0 +1,181 @@
+/*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
+*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^* BASE
+^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*/
+
+body {
+  background: $color-background;
+  color: $color-text;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+a,
+a:visited {
+  color: $color-link;
+  text-decoration: underline;
+  transition: $transition-out;
+}
+
+a:hover,
+a:active {
+  color: $color-link-hover;
+  transition: $transition-in;
+  text-decoration: none;
+
+  .hover-bounce {
+    position: relative;
+    top: 0.2em;
+    transition: $transition-in;
+  }
+}
+
+a:active {
+  transform: scale(0.97);
+  display: inline-block;
+}
+
+a[href^="#"] {
+  outline: 0;
+}
+
+.anchor-offset {
+  display: inline;
+  position: relative;
+  top: -$nav-height;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.align-left {
+  float: left;
+  margin: $lead-half $lead-single $lead-single 0;
+}
+
+.align-right {
+  float: right;
+  margin: $lead-half 0 $lead-single $lead-single;
+}
+
+.no-padding-left { padding-left: 0; }
+.no-padding-right { padding-right: 0; }
+
+.no-margin-bottom { margin-bottom: 0; }
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-hide {
+  text-indent: -99999px;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+.bare {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.color-text {
+  color: $color-text;
+}
+
+.img-border {
+  border: 1px solid $color-text;
+  border-radius: $border-radius;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+::-moz-selection {
+  background: $color-selection-bg;
+  color: $color-selection;
+}
+
+::-webkit-selection {
+  background: $color-selection-bg;
+  color: $color-selection;
+}
+
+::selection {
+  background: $color-selection-bg;
+  color: $color-selection;
+}
+
+/*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
+*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^* LAYOUT
+^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*/
+
+section {
+  margin-bottom: $lead-triple;
+}
+
+.row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 260px;
+  height: 160px;
+  margin: 0 auto;
+  background: url('/images/scouthawk-logo.svg') no-repeat;
+  background-size: 55%;
+  background-position: center top;
+  display: block;
+}
+
+/*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
+*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^* MODULES
+^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*/
+
+[class*="icon-"] {
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 ($lead-half/2);
+}

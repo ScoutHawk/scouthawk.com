@@ -1,0 +1,12 @@
+name: "Scout Hawk"
+description: "Product Design Studio"
+url: "http://www.scouthawk.com"
+markdown: kramdown
+highlighter: pygments
+exclude: ["node_modules", "bower_components", "gulpfile.js", "package.json", "bower.json", "README.md"]
+excerpt_separator: "<!-- more -->"
+permalink: /:title
+paginate: 5
+paginate_path: "/p:num"
+gems:
+  - jekyll-sitemap
