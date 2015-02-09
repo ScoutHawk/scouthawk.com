@@ -97,7 +97,7 @@ gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('deploy', ['jekyll-build'], function() {
   return gulp.src('./_site/**/*')
     .pipe(deploy({
-      remoteUrl: "git@github.com:zachalbert/zachalbert.github.io.git",
+      remoteUrl: "git@github.com:ScoutHawk/scouthawk.github.io.git",
       branch: "master"
     }));
 });
